@@ -20,10 +20,10 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
             console.log('Nilai awal harus lebih besar dari nilai akhir!');
         }
     } else {
-        console.log('Nilai harus number!')
+        console.log('Array haru lebih dari 5!')
     }
 }
 
-const data = seleksiNilai(5, 20 , [2, 20, 5, 14, 12, 45]);
+const data = seleksiNilai(5, 20 , [2, 20, 5, 14, 12]);
 ;
 console.log(data);
