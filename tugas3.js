@@ -20,7 +20,7 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
             console.log('Nilai awal harus lebih besar dari nilai akhir!');
         }
     } else {
-        console.log('Array haru lebih dari 5!')
+        console.log('Array harus lebih dari 5!')
     }
 }
 
