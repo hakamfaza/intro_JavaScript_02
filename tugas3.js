@@ -1,8 +1,7 @@
 const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     let lengthArr = dataArray.length;
 
-/*     const arr = () => {
-        const hasil = dataArray.every((e) => {
+/*     const arr = () => {dataArray.every((e) => {
             return typeof e === 'number';
         });
     }
