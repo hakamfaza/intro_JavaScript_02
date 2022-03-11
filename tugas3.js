@@ -8,7 +8,7 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
  */
     if(lengthArr > 5) {
         const cekValue = dataArray.filter((e) => {
-            return e >= nilaiAwal && e <= nilaiAkhir;
+            return e > nilaiAwal && e < nilaiAkhir;
     })
         if(cekValue != false) {
             if(cekValue.length !== 0) {
