@@ -11,8 +11,14 @@ const searchName = (e, limit, cb) => {
 
 const callback = (e, limit) => {
     const fil = names.filter(element => element.includes(e));
-    const str = fil.slice(0, limit)
-    return str;
+    if(fil.length >= limit) {
+        const str = fil.slice(0, limit)
+        return str;
+    } else {
+        const str = fil.slice(0, limit)
+        console.log(`Element hanya ada ${fil.length}!`)
+        return str;
+    }
 }
 
-console.log(searchName('an', 1, callback))
+console.log(searchName('an', 4, callback))

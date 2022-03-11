@@ -11,16 +11,15 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
         const cekValue = dataArray.filter((e) => {
             return e >= nilaiAwal && e <= nilaiAkhir;
     })
-
-    if(cekValue != false) {
-        if(cekValue.length !== 0) {
-            return cekValue.sort((a, b) => a - b);
+        if(cekValue != false) {
+            if(cekValue.length !== 0) {
+                return cekValue.sort((a, b) => a - b);
+            } else {
+                console.log('Nilai tidak ditemukan!')
+            }
         } else {
-            console.log('Nilai tidak ditemukan!')
+            console.log('Nilai awal harus lebih besar dari nilai akhir!');
         }
-    } else {
-        console.log('Nilai awal harus lebih besar dari nilai akhir!');
-    }
     } else {
         console.log('Nilai harus number!')
     }
